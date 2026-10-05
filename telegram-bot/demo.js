@@ -398,7 +398,13 @@
     }
   }
 
-  document.querySelectorAll('[data-action]').forEach(btn => btn.addEventListener('click', () => action(btn.dataset.action)));
+  document.querySelectorAll('[data-action]').forEach(btn => btn.addEventListener('click', () => {
+    // На телефоне чат ниже кнопок — прокручиваем к нему, чтобы был виден ответ
+    if (window.matchMedia('(max-width: 960px)').matches) {
+      document.querySelector('.phone').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    action(btn.dataset.action);
+  }));
   document.querySelectorAll('#menu button').forEach(btn => btn.addEventListener('click', () => handleText(btn.textContent)));
   const form = document.getElementById('input');
   form.addEventListener('submit', e => {
