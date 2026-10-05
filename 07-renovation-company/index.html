@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ремонт по смете — ремонт квартир под ключ в Нижнем Новгороде</title>
+  <meta name="description" content="Ремонт квартир под ключ с фиксированной сметой и штрафом за каждый день просрочки. Расчёт стоимости за 1 минуту.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo"><span class="logo__box">РС</span><span>Ремонт<br>по смете</span></a>
+      <nav class="nav" id="nav">
+        <a href="#calc">Калькулятор</a>
+        <a href="#works">Объекты</a>
+        <a href="#steps">Этапы</a>
+        <a href="#guarantee">Гарантии</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <a href="tel:+78312827070" class="header__phone">+7 (831) 282-70-70</a>
+      <button class="burger" id="burger" aria-label="Меню">☰</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__badge">Нижний Новгород и область · 11 лет на рынке</p>
+          <h1>Ремонт квартир под ключ <span>по смете, которая не растёт</span></h1>
+          <p class="hero__lead">Фиксируем цену и сроки в договоре. Если задержим сдачу — платим вам 0,5% от стоимости работ за каждый день просрочки.</p>
+          <ul class="hero__list">
+            <li>Своя бригада, без субподрядчиков</li>
+            <li>Ежедневный фотоотчёт в WhatsApp</li>
+            <li>Оплата поэтапно — после приёмки работ</li>
+          </ul>
+          <div class="hero__actions">
+            <a href="#calc" class="btn">Рассчитать стоимость за 1 минуту</a>
+            <a href="#contact" class="btn btn--dark">Вызвать замерщика бесплатно</a>
+          </div>
+        </div>
+        <div class="hero__plan" aria-hidden="true">
+          <svg viewBox="0 0 400 340" class="plan">
+            <rect x="10" y="10" width="380" height="320" class="plan__wall"/>
+            <line x1="200" y1="10" x2="200" y2="190" class="plan__wall"/>
+            <line x1="10" y1="190" x2="280" y2="190" class="plan__wall"/>
+            <line x1="280" y1="190" x2="280" y2="330" class="plan__wall"/>
+            <line x1="200" y1="110" x2="200" y2="150" class="plan__door"/>
+            <line x1="120" y1="190" x2="160" y2="190" class="plan__door"/>
+            <line x1="280" y1="230" x2="280" y2="270" class="plan__door"/>
+            <text x="105" y="105">Спальня 16 м²</text>
+            <text x="295" y="105">Гостиная 22 м²</text>
+            <text x="145" y="265">Кухня 12 м²</text>
+            <text x="335" y="265">С/у 5 м²</text>
+            <line x1="10" y1="-2" x2="390" y2="-2" class="plan__dim"/>
+          </svg>
+          <div class="hero__sticker"><b>от 9 900 ₽</b><span>за м² под ключ</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container numbers__inner">
+        <div><b>640</b><span>квартир сдано</span></div>
+        <div><b>98%</b><span>объектов — точно в срок</span></div>
+        <div><b>5 лет</b><span>гарантии на все работы</span></div>
+        <div><b>0 ₽</b><span>доплат сверх сметы</span></div>
+      </div>
+    </section>
+
+    <section class="section calc" id="calc">
+      <div class="container">
+        <h2 class="h2">Калькулятор ремонта</h2>
+        <p class="sub">Предварительная стоимость работ и черновых материалов. Точную смету составим после бесплатного замера.</p>
+        <div class="calc__box">
+          <div class="calc__form">
+            <div class="calc__group">
+              <label for="area">Площадь квартиры: <b id="areaVal">54</b> м²</label>
+              <input type="range" id="area" min="20" max="200" value="54">
+            </div>
+            <div class="calc__group">
+              <span class="calc__title">Тип ремонта</span>
+              <div class="options">
+                <label><input type="radio" name="type" value="6900"><span><b>Косметический</b><small>обои, покраска, ламинат</small></span></label>
+                <label><input type="radio" name="type" value="9900" checked><span><b>Капитальный</b><small>замена электрики и сантехники</small></span></label>
+                <label><input type="radio" name="type" value="14900"><span><b>Дизайнерский</b><small>по проекту, сложные решения</small></span></label>
+              </div>
+            </div>
+            <div class="calc__group">
+              <span class="calc__title">Тип дома</span>
+              <div class="options options--small">
+                <label><input type="radio" name="house" value="1" checked><span>Вторичка</span></label>
+                <label><input type="radio" name="house" value="0.92"><span>Новостройка</span></label>
+              </div>
+            </div>
+            <div class="calc__group">
+              <span class="calc__title">Дополнительно</span>
+              <label class="check"><input type="checkbox" value="45000" class="extra"> Демонтаж старой отделки</label>
+              <label class="check"><input type="checkbox" value="38000" class="extra"> Тёплый пол в санузле и на кухне</label>
+              <label class="check"><input type="checkbox" value="0.07" class="extra extra--pct"> Закупка и доставка материалов «под ключ»</label>
+            </div>
+          </div>
+          <div class="calc__result">
+            <span>Ориентировочная стоимость</span>
+            <b id="total">534 600 ₽</b>
+            <p>Срок: <strong id="term">≈ 70 рабочих дней</strong></p>
+            <p class="calc__month">или <strong id="monthly">22 275 ₽/мес.</strong> в рассрочку на 24 месяца</p>
+            <a href="#contact" class="btn btn--block" id="calcBtn">Получить точную смету</a>
+            <small>Цена фиксируется в договоре и не меняется до конца ремонта</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="works">
+      <div class="container">
+        <h2 class="h2">Последние объекты</h2>
+        <div class="works">
+          <article class="work">
+            <div class="work__img work__img--1"><span class="work__price">1,02 млн ₽</span></div>
+            <div class="work__body">
+              <h3>2-комн. квартира, ЖК «Анкудиновский парк»</h3>
+              <ul><li><b>68 м²</b> площадь</li><li><b>84 дня</b> срок</li><li><b>Капитальный</b> ремонт</li></ul>
+              <p>Объединили кухню с гостиной, перенесли санузел, сделали скрытые двери под покраску.</p>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__img work__img--2"><span class="work__price">412 тыс. ₽</span></div>
+            <div class="work__body">
+              <h3>Студия для сдачи в аренду, Сормово</h3>
+              <ul><li><b>31 м²</b> площадь</li><li><b>38 дней</b> срок</li><li><b>Косметический</b> ремонт</li></ul>
+              <p>Бюджетные, но износостойкие материалы. Квартиру сдали через неделю после ремонта.</p>
+            </div>
+          </article>
+          <article class="work">
+            <div class="work__img work__img--3"><span class="work__price">2,4 млн ₽</span></div>
+            <div class="work__body">
+              <h3>3-комн. квартира в сталинке, Нижегородский район</h3>
+              <ul><li><b>96 м²</b> площадь</li><li><b>132 дня</b> срок</li><li><b>Дизайнерский</b> ремонт</li></ul>
+              <p>Восстановили лепнину, заменили перекрытия, сделали гардеробную и вторую ванную.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="steps">
+      <div class="container">
+        <h2 class="h2">Как мы работаем</h2>
+        <div class="steps">
+          <div class="step"><span>1</span><h3>Замер — бесплатно</h3><p>Инженер приезжает в удобное время, делает обмеры и обсуждает пожелания.</p></div>
+          <div class="step"><span>2</span><h3>Смета за 1 день</h3><p>Подробная смета: каждая работа, объём и цена. Никаких «прочих расходов».</p></div>
+          <div class="step"><span>3</span><h3>Договор</h3><p>Фиксируем цену, график этапов, сроки и штраф за просрочку.</p></div>
+          <div class="step"><span>4</span><h3>Ремонт</h3><p>Прораб на объекте каждый день, фотоотчёт в чате, вы приезжаете только на приёмку этапов.</p></div>
+          <div class="step"><span>5</span><h3>Сдача и уборка</h3><p>Клининг после ремонта — за наш счёт. Вы получаете ключи и гарантийный паспорт.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--yellow" id="guarantee">
+      <div class="container guarantee">
+        <div>
+          <h2 class="h2">Гарантии, которые прописаны в договоре</h2>
+          <p class="guarantee__text">Не «честное слово прораба», а юридические обязательства с ответственностью компании.</p>
+        </div>
+        <ol class="guarantee__list">
+          <li><b>Фиксированная смета.</b> Если мы ошиблись в расчётах — доплачиваем сами.</li>
+          <li><b>Штраф 0,5% в день</b> за просрочку сдачи по нашей вине.</li>
+          <li><b>Гарантия 5 лет</b> на работы. Приезжаем на гарантийный случай в течение 48 часов.</li>
+          <li><b>Оплата по этапам</b> — вы платите только за принятую работу.</li>
+          <li><b>Страхование ответственности</b> на 3 млн ₽, если затопим соседей.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="h2">Отзывы заказчиков</h2>
+        <div class="reviews">
+          <blockquote class="review">
+            <div class="review__head"><span class="review__ava">ВП</span><div><b>Виктор Панов</b><small>2-комн., 68 м² · Авито, Яндекс Карты</small></div></div>
+            <p>«Это мой третий ремонт и первый, где не было скандалов. Смета 1 018 000, итог — 1 018 000. Сдали на 3 дня раньше. Прораб Сергей — золото».</p>
+          </blockquote>
+          <blockquote class="review">
+            <div class="review__head"><span class="review__ava">ЕЛ</span><div><b>Елена Лаврова</b><small>Студия, 31 м² · 2ГИС</small></div></div>
+            <p>«Жила в Москве и вообще не приезжала на объект — смотрела фото в WhatsApp каждый вечер. Приехала на приёмку, всё как договаривались».</p>
+          </blockquote>
+          <blockquote class="review">
+            <div class="review__head"><span class="review__ava">АШ</span><div><b>Андрей Шилов</b><small>3-комн., 96 м² · Яндекс Карты</small></div></div>
+            <p>«На этапе демонтажа нашли гнилые перекрытия. Думал, сейчас начнётся „надо доплатить“. Нет — сделали в рамках сметы, как и обещали в договоре».</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact__inner">
+        <div class="contact__text">
+          <h2 class="h2">Вызовите замерщика — это бесплатно</h2>
+          <p>Приедем в течение 2 дней, сделаем замеры и на следующий день пришлём подробную смету. Вы ничего не обязаны подписывать.</p>
+          <div class="contact__phone">
+            <a href="tel:+78312827070">+7 (831) 282-70-70</a>
+            <span>Ежедневно 8:00–20:00</span>
+            <span>Офис: ул. Белинского, 32, БЦ «Европа», оф. 504</span>
+          </div>
+        </div>
+        <form class="form" id="form" novalidate>
+          <div class="form__calc" id="formCalc" hidden></div>
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="text" name="address" placeholder="Район или адрес (необязательно)">
+          <button type="submit" class="btn btn--block">Вызвать замерщика</button>
+          <p class="form__small">Перезвоним в течение 15 минут в рабочее время</p>
+          <div class="form__done" hidden><b>Заявка принята!</b><p>Менеджер перезвонит, чтобы согласовать время замера.</p></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2015–2026 ООО «Ремонт по смете» · ИНН 5262318845 · Член СРО «Строители Нижнего Новгорода»</span>
+      <span>Расчёт калькулятора не является публичной офертой</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

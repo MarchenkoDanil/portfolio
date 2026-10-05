@@ -1,0 +1,8 @@
+{
+  "token": "123456789:ВСТАВЬТЕ_ТОКЕН_ОТ_BOTFATHER",
+  "admins": [123456789],
+  "port": 3000,
+  "allowedOrigins": ["*"],
+  "remindAfterMinutes": 30,
+  "timezone": "Europe/Moscow"
+}

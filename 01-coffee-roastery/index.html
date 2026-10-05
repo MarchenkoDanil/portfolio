@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тёплый край — обжарка свежего кофе в Екатеринбурге</title>
+  <meta name="description" content="Обжариваем specialty-кофе небольшими партиями и привозим в течение 72 часов после обжарки. Для дома, офиса и кофеен.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,500&family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><ellipse cx="16" cy="16" rx="10" ry="14" transform="rotate(30 16 16)" fill="currentColor"/><path d="M10 25c5-4 7-14 12-18" stroke="#f4ece1" stroke-width="2" fill="none"/></svg>
+        Тёплый край
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#coffee">Кофе</a>
+        <a href="#subscribe">Подписка</a>
+        <a href="#b2b">Для кофеен</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contact" class="btn btn--small">Заказать</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Открыть меню"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Обжарочная мастерская · Екатеринбург · с 2017 года</p>
+          <h1>Кофе, который обжарили <em>вчера</em>, а&nbsp;не&nbsp;полгода назад</h1>
+          <p class="lead">Обжариваем specialty-зерно партиями по 12 кг и привозим в течение 72 часов. Вы впервые почувствуете, что у кофе действительно есть вкус черники, карамели и какао.</p>
+          <div class="hero__actions">
+            <a href="#coffee" class="btn">Выбрать кофе</a>
+            <a href="#subscribe" class="link-arrow">Подписка со скидкой 15% →</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>84+</strong> баллов SCA у каждого лота</li>
+            <li><strong>72 ч</strong> от ростера до вашей двери</li>
+            <li><strong>4,9★</strong> на Яндекс Картах, 1 200+ отзывов</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="bag">
+            <div class="bag__top"></div>
+            <div class="bag__label">
+              <span class="bag__brand">Тёплый край</span>
+              <span class="bag__origin">Эфиопия<br>Иргачефф</span>
+              <span class="bag__notes">жасмин · бергамот · персик</span>
+              <span class="bag__date">обжарено 03.10</span>
+            </div>
+          </div>
+          <div class="stamp">свежая<br>обжарка<br>каждый<br>вторник</div>
+          <div class="bean bean--1"></div><div class="bean bean--2"></div><div class="bean bean--3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="container strip__inner">
+        <span>Бесплатная доставка от 2 000 ₽</span><span>Помол под вашу турку, гейзер или эспрессо</span><span>Вернём деньги, если вкус не понравится</span>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="container">
+        <h2 class="title">Почему кофе из супермаркета горчит, а наш — нет</h2>
+        <div class="why">
+          <article class="why__item">
+            <span class="why__num">01</span>
+            <h3>Свежесть, а не срок годности</h3>
+            <p>Пик вкуса зерна — с 3-го по 30-й день после обжарки. В магазине пачка лежит месяцами. Мы обжариваем под ваш заказ и пишем дату на каждой упаковке.</p>
+          </article>
+          <article class="why__item">
+            <span class="why__num">02</span>
+            <h3>Зерно с конкретной фермы</h3>
+            <p>Покупаем лоты напрямую у импортёров, каждый проходит каппинг. Вы знаете страну, регион, высоту и способ обработки — как с хорошим вином.</p>
+          </article>
+          <article class="why__item">
+            <span class="why__num">03</span>
+            <h3>Обжарка под способ заваривания</h3>
+            <p>Светлая — для воронки и аэропресса, средняя — для турки и гейзера, тёмная — для эспрессо с молоком. Подскажем, если не уверены.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="coffee">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="title">Сейчас в обжарке</h2>
+          <p>Цена за 250 г. Есть упаковки 1 кг со скидкой 20%.</p>
+        </div>
+        <div class="products">
+          <article class="product">
+            <div class="product__pack" style="--c:#d9a441"></div>
+            <span class="product__tag">Хит продаж</span>
+            <h3>Бразилия Серрадо</h3>
+            <p class="product__notes">молочный шоколад · орех · карамель</p>
+            <div class="product__scale"><span>Кислотность</span><i style="--v:25%"></i></div>
+            <div class="product__scale"><span>Плотность</span><i style="--v:80%"></i></div>
+            <p class="product__for">Для турки, гейзера и эспрессо с молоком</p>
+            <div class="product__bottom"><b>690 ₽</b><button class="btn btn--small" data-order="Бразилия Серрадо">В заказ</button></div>
+          </article>
+          <article class="product">
+            <div class="product__pack" style="--c:#b8506b"></div>
+            <span class="product__tag">Новый урожай</span>
+            <h3>Эфиопия Иргачефф</h3>
+            <p class="product__notes">жасмин · бергамот · персик</p>
+            <div class="product__scale"><span>Кислотность</span><i style="--v:75%"></i></div>
+            <div class="product__scale"><span>Плотность</span><i style="--v:40%"></i></div>
+            <p class="product__for">Для воронки, кемекса и аэропресса</p>
+            <div class="product__bottom"><b>890 ₽</b><button class="btn btn--small" data-order="Эфиопия Иргачефф">В заказ</button></div>
+          </article>
+          <article class="product">
+            <div class="product__pack" style="--c:#6f8a4c"></div>
+            <span class="product__tag">Для эспрессо</span>
+            <h3>Колумбия Уила</h3>
+            <p class="product__notes">красное яблоко · тростниковый сахар · какао</p>
+            <div class="product__scale"><span>Кислотность</span><i style="--v:50%"></i></div>
+            <div class="product__scale"><span>Плотность</span><i style="--v:65%"></i></div>
+            <p class="product__for">Универсальный: от эспрессо до френч-пресса</p>
+            <div class="product__bottom"><b>790 ₽</b><button class="btn btn--small" data-order="Колумбия Уила">В заказ</button></div>
+          </article>
+          <article class="product">
+            <div class="product__pack" style="--c:#c4622d"></div>
+            <span class="product__tag">Лимитированный</span>
+            <h3>Кения AA Ньери</h3>
+            <p class="product__notes">чёрная смородина · грейпфрут · томат</p>
+            <div class="product__scale"><span>Кислотность</span><i style="--v:90%"></i></div>
+            <div class="product__scale"><span>Плотность</span><i style="--v:55%"></i></div>
+            <p class="product__for">Для альтернативы — яркий и сочный</p>
+            <div class="product__bottom"><b>1 090 ₽</b><button class="btn btn--small" data-order="Кения AA Ньери">В заказ</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="subscribe">
+      <div class="container subscribe">
+        <div class="subscribe__text">
+          <h2 class="title">Подписка: кофе приходит сам, когда заканчивается старый</h2>
+          <p class="lead">Выберите объём и частоту — мы будем привозить свежую обжарку и каждый раз добавлять новый сорт на пробу. Пауза или отмена — в один клик, без звонков.</p>
+          <ul class="checklist">
+            <li>Скидка 15% на каждую поставку</li>
+            <li>Бесплатная доставка независимо от суммы</li>
+            <li>Мини-пачка нового лота в подарок раз в месяц</li>
+            <li>Персональный бариста в Telegram — поможет настроить помол</li>
+          </ul>
+        </div>
+        <div class="plans">
+          <label class="plan"><input type="radio" name="plan" value="500 г / 2 недели"><span class="plan__body"><b>Для одного</b><span>500 г раз в 2 недели</span><strong>1 190 ₽ <small>/ поставка</small></strong></span></label>
+          <label class="plan plan--best"><input type="radio" name="plan" value="1 кг / 2 недели" checked><span class="plan__body"><em>Выбирают чаще всего</em><b>Для пары</b><span>1 кг раз в 2 недели</span><strong>2 090 ₽ <small>/ поставка</small></strong></span></label>
+          <label class="plan"><input type="radio" name="plan" value="3 кг / месяц"><span class="plan__body"><b>Для офиса до 15 человек</b><span>3 кг раз в месяц</span><strong>5 490 ₽ <small>/ поставка</small></strong></span></label>
+          <a href="#contact" class="btn btn--wide" id="planBtn">Оформить подписку</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--terra" id="b2b">
+      <div class="container b2b">
+        <div>
+          <h2 class="title">Кофейням и ресторанам</h2>
+          <p class="lead">Поставляем зерно в 40+ заведений Урала. Бесплатно настроим помол и рецепт на вашей кофемашине, обучим бариста и дадим оборудование в аренду при закупке от 20 кг в месяц.</p>
+          <a href="#contact" class="btn btn--light">Получить оптовый прайс</a>
+        </div>
+        <ul class="b2b__list">
+          <li><b>от 1 290 ₽/кг</b> эспрессо-смеси для молочных напитков</li>
+          <li><b>48 часов</b> — доставка по Екатеринбургу и области</li>
+          <li><b>3 дегустации</b> бесплатно перед первым заказом</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <h2 class="title">Что говорят те, кто уже пьёт наш кофе</h2>
+        <div class="reviews">
+          <blockquote class="review">
+            <p>«Три года пила растворимый, потому что „зерновой всё равно горький“. Взяла Бразилию для турки — и муж теперь сам встаёт раньше, чтобы сварить кофе».</p>
+            <footer><span class="avatar">М</span>Марина Осипова<br><small>подписка «Для пары» с 2023 года</small></footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>«Перешли на „Тёплый край“ с московского ростера. Стабильность обжарки от партии к партии отличная, а ребята сами приехали и откалибровали гриндер».</p>
+            <footer><span class="avatar">А</span>Артём Лаптев<br><small>совладелец кофейни «Перрон», Екатеринбург</small></footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>«Заказываем в офис 3 кг в месяц. Разработчики перестали бегать в кофейню через дорогу — экономия заметная, а качество не хуже».</p>
+            <footer><span class="avatar">Е</span>Екатерина Ли<br><small>офис-менеджер, IT-компания «Сфера»</small></footer>
+          </blockquote>
+        </div>
+        <div class="badges">
+          <span>Член ассоциации SCA</span><span>Q-грейдер в команде</span><span>Победитель Ural Coffee Fest 2025</span><span>Сертификаты на каждый лот</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="contact">
+      <div class="container contact">
+        <div class="contact__text">
+          <h2 class="title">Сделайте первый заказ — второй пакет за полцены</h2>
+          <p class="lead">Оставьте контакты, и бариста перезвонит в течение 15 минут: поможет выбрать сорт под вашу кофеварку и оформит доставку.</p>
+          <div class="contact__ways">
+            <a href="tel:+73432870515">+7 (343) 287-05-15</a>
+            <a href="https://t.me/" target="_blank" rel="noopener">Telegram: @teplyi_krai</a>
+            <span>Шоурум: ул. Малышева, 51 · ежедневно 9:00–21:00</span>
+          </div>
+        </div>
+        <form class="form" id="form" novalidate>
+          <label>Ваше имя<input type="text" name="name" placeholder="Анна" required></label>
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required></label>
+          <label>Что вас интересует
+            <select name="topic" id="topic">
+              <option>Кофе для дома</option>
+              <option>Подписка</option>
+              <option>Кофе для офиса</option>
+              <option>Оптовые поставки для заведения</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn--wide">Жду звонка бариста</button>
+          <p class="form__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+          <p class="form__success" hidden>Спасибо! Бариста перезвонит в течение 15 минут. А пока — поставьте воду греться ☕</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Обжарочная мастерская «Тёплый край»</span>
+      <span>ИП Морозов Д. А. · ОГРНИП 317665800012345</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
