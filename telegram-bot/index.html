@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демо Telegram-бота для заявок</title>
+  <meta name="description" content="Интерактивная демонстрация Telegram-бота: заявки с сайта, статусы, заметки, поиск, статистика и выгрузка в Excel.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <a href="../index.html" class="intro__back">← Все работы</a>
+      <h1>Telegram-бот, в котором не теряется ни одна заявка</h1>
+      <p class="intro__lead">Клиент оставляет заявку на сайте, и через секунду она приходит в Telegram. Здесь же её можно взять в работу, оставить заметку, найти и посчитать в статистике. Попробуйте сами: чат справа работает так же, как настоящий бот.</p>
+      <p class="note">💡 Это демо в браузере: данные выдуманы и никуда не отправляются. Тексты, кнопки и логика такие же, как у настоящего бота.</p>
+
+      <div class="actions">
+        <button class="action action--primary" data-action="lead">📨 Отправить тестовую заявку с сайта<small>Увидите, как она приходит владельцу бизнеса</small></button>
+        <button class="action" data-action="/leads">📋 Все заявки<small>список, фильтры, страницы</small></button>
+        <button class="action" data-action="/stats">📊 Статистика<small>конверсия, время реакции</small></button>
+        <button class="action" data-action="/find 555">🔍 Поиск «555»<small>по цифрам телефона</small></button>
+        <button class="action" data-action="remind">⏰ Напоминание<small>если заявку не взяли в работу</small></button>
+      </div>
+
+      <ul class="features">
+        <li><span>🔔</span><b>Мгновенное уведомление</b> о новой заявке, с кнопками статуса</li>
+        <li><span>📝</span><b>Заметки</b> к заявке и история: кто и когда менял статус</li>
+        <li><span>🔍</span><b>Поиск</b> по имени, телефону, компании и заметкам</li>
+        <li><span>📊</span><b>Статистика</b> за день, неделю и месяц, график по дням</li>
+        <li><span>📤</span><b>Выгрузка в Excel</b> всей базы одной командой</li>
+        <li><span>🔒</span><b>Доступ только владельцу</b>: чужие не увидят заявки</li>
+      </ul>
+      <a class="intro__code" href="https://github.com/MarchenkoDanil/portfolio/tree/main/telegram-bot" target="_blank" rel="noopener">Исходный код на GitHub →</a>
+    </section>
+
+    <div class="phone">
+      <div class="chat">
+        <div class="chat__head">
+          <div class="chat__ava">🤖</div>
+          <div class="chat__title"><b>Заявки с сайта</b><span>бот</span></div>
+        </div>
+        <div class="chat__messages" id="messages"></div>
+        <div class="toast" id="toast"></div>
+        <div class="chat__menu" id="menu">
+          <button>📋 Все заявки</button>
+          <button>🆕 Новые</button>
+          <button>📊 Статистика</button>
+          <button>🔍 Поиск</button>
+          <button>📤 Выгрузить в Excel</button>
+        </div>
+        <form class="chat__input" id="input">
+          <input type="text" placeholder="Сообщение или команда, например /help" autocomplete="off">
+          <button type="submit" aria-label="Отправить">➤</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="demo.js"></script>
+</body>
+</html>

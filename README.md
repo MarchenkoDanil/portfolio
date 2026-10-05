@@ -23,6 +23,10 @@
 
 ## Telegram-бот для заявок — [`telegram-bot/`](telegram-bot/)
 
+**[Попробовать демо бота в браузере →](https://marchenkodanil.github.io/portfolio/telegram-bot/)**
+
+<img src="telegram-bot/screenshots/lead.jpg" width="200"> <img src="telegram-bot/screenshots/leads.jpg" width="200"> <img src="telegram-bot/screenshots/stats.jpg" width="200">
+
 Node.js без внешних зависимостей. Принимает заявки с сайта по HTTP и даёт работать с ними в Telegram:
 
 - уведомление о новой заявке с кнопками статуса: «В работе», «Закрыта», «Отказ»;
