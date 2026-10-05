@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Портфолио — сайты, Telegram-боты и реклама</title>
-  <meta name="description" content="Создаю цифровые продукты и помогаю их продвигать: продающие сайты, Telegram-боты для заявок, рекламные креативы и стратегии.">
+  <title>Портфолио — сайты, боты, видео, соцсети и реклама</title>
+  <meta name="description" content="Упаковываю digital-проекты под ключ: продающие сайты, Telegram-боты, видеомонтаж, motion-дизайн, оформление соцсетей и реклама.">
   <meta property="og:title" content="Портфолио — сайты, Telegram-боты и реклама">
   <meta property="og:description" content="Web Design · Telegram Bots · Advertising & Marketing. Продающие сайты, боты для заявок и реклама, которая приводит клиентов.">
   <meta property="og:image" content="assets/previews/03-law-firm.jpg">
@@ -36,15 +36,19 @@
     @media (max-width: 420px) { .grid { grid-template-columns: 1fr; } }
   </style>
   <link rel="stylesheet" href="assets/portfolio.css">
+  <link rel="stylesheet" href="assets/media.css">
 </head>
 <body>
   <header class="nav">
     <div class="nav__inner">
       <a href="#top" class="nav__brand"><i></i>Портфолио</a>
       <nav class="nav__links">
-        <a href="#web">Web Design</a>
-        <a href="#bots">Telegram Bots</a>
-        <a href="#marketing">Advertising &amp; Marketing</a>
+        <a href="#web">Web</a>
+        <a href="#bots">Bots</a>
+        <a href="#marketing">Ads</a>
+        <a href="#video">Video</a>
+        <a href="#motion">Motion</a>
+        <a href="#social">Social</a>
       </nav>
       <a href="#contact" class="nav__cta">Обсудить проект</a>
     </div>
@@ -52,13 +56,59 @@
 
   <div class="wrap" id="top">
     <section class="hero">
-      <p class="eyebrow">Web Design · Telegram Bots · Advertising &amp; Marketing</p>
+      <p class="eyebrow">Web Design · Telegram Bots · Advertising · Video · Motion · Social Media</p>
       <h1>Создаю цифровые продукты и&nbsp;<em>помогаю их продвигать</em></h1>
-      <p class="sub">Сайты, которые продают. Telegram-боты, в которых не теряются заявки. Реклама, которая приводит клиентов. Всё работает в одной связке и под конкретную задачу бизнеса.</p>
+      <p class="sub">Упаковываю проект целиком: сайт, который продаёт, Telegram-бот для заявок, видео и motion-графика, соцсети в едином стиле и реклама, которая приводит клиентов.</p>
       <div class="dirs">
         <a class="dir" href="#web"><span class="dir__num">01</span><span><b>Web Design</b><span>7 продающих сайтов</span></span><span class="dir__arrow">→</span></a>
         <a class="dir" href="#bots"><span class="dir__num">02</span><span><b>Telegram Bots</b><span>заявки и автоматизация</span></span><span class="dir__arrow">→</span></a>
         <a class="dir" href="#marketing"><span class="dir__num">03</span><span><b>Advertising &amp; Marketing</b><span>креативы и стратегии</span></span><span class="dir__arrow">→</span></a>
+        <a class="dir" href="#video"><span class="dir__num">04</span><span><b>Video Editing</b><span>Reels, реклама, эксперты</span></span><span class="dir__arrow">→</span></a>
+        <a class="dir" href="#motion"><span class="dir__num">05</span><span><b>Motion Design</b><span>текст, логотипы, UI</span></span><span class="dir__arrow">→</span></a>
+        <a class="dir" href="#social"><span class="dir__num">06</span><span><b>Social Media</b><span>оформление соцсетей</span></span><span class="dir__arrow">→</span></a>
+      </div>
+    </section>
+
+    <!-- Полный цикл -->
+    <section class="sec fc" id="full">
+      <div class="sec-head">
+        <span class="sec-head__num">Полный цикл</span>
+        <div>
+          <h2>Упакую digital-проект целиком: от&nbsp;сайта до&nbsp;рекламы</h2>
+          <p>Не нужно искать семь подрядчиков и согласовывать их между собой. Один специалист, один визуальный стиль и одна стратегия на всех площадках.</p>
+        </div>
+      </div>
+      <div class="fc__grid">
+        <div class="fc__ask rv">
+          <span class="fc__label">Клиент приходит с задачей</span>
+          <p class="fc__quote">«Мне нужно запустить и красиво упаковать digital-продукт»</p>
+          <span class="fc__label">И получает комплексное решение</span>
+          <p class="fc__answer">Сайт, который продаёт, бот, который собирает заявки, контент и видео, которые прогревают, соцсети в едином стиле и реклама, которая приводит людей.</p>
+          <div class="fc__chips" id="fcChips"><span>Сайт</span><span>Telegram</span><span>Контент</span><span>Видео</span><span>Motion</span><span>Соцсети</span><span>Реклама</span></div>
+          <a href="#contact" class="fc__btn">Обсудить упаковку проекта →</a>
+        </div>
+        <div class="fc__flow rv" style="--d:1" id="fcFlow">
+          <h3>Сайт → Telegram → Контент → Видео → Motion → Соцсети → Реклама</h3>
+          <div class="fc__steps">
+            <button class="fc__step on"><span>01</span>Сайт</button><i>→</i>
+            <button class="fc__step"><span>02</span>Telegram</button><i>→</i>
+            <button class="fc__step"><span>03</span>Контент</button><i>→</i>
+            <button class="fc__step"><span>04</span>Видео</button><i>→</i>
+            <button class="fc__step"><span>05</span>Motion</button><i>→</i>
+            <button class="fc__step"><span>06</span>Соцсети</button><i>→</i>
+            <button class="fc__step"><span>07</span>Реклама</button>
+          </div>
+          <div class="fc__panel">
+            <div class="fc__pane on"><span class="fc__icon">🖥</span><b>Продающий сайт</b><p>Структура, тексты и дизайн, которые объясняют оффер за пять секунд.</p><span class="fc__res">→ Посетитель понимает, что вы продаёте, и оставляет заявку</span><a href="#web">7 сайтов в портфолио →</a></div>
+            <div class="fc__pane"><span class="fc__icon">🤖</span><b>Telegram-бот</b><p>Заявки с сайта сразу в Telegram: статусы, заметки, поиск и статистика.</p><span class="fc__res">→ Ни одна заявка не теряется</span><a href="#bots">Демо бота →</a></div>
+            <div class="fc__pane"><span class="fc__icon">✍️</span><b>Контент и прогрев</b><p>Контент-план, посты, тексты и серии прогрева под запуск продукта.</p><span class="fc__res">→ Аудитория доверяет вам ещё до покупки</span><a href="#posts">Примеры постов →</a></div>
+            <div class="fc__pane"><span class="fc__icon">🎬</span><b>Видеомонтаж</b><p>Reels, Shorts, рекламные и экспертные ролики с динамичным монтажом и субтитрами.</p><span class="fc__res">→ Продукт объясняет себя за 30 секунд</span><a href="#video">Видеокейсы →</a></div>
+            <div class="fc__pane"><span class="fc__icon">✨</span><b>Motion Design</b><p>Анимация логотипа, текста, интерфейсов и рекламных креативов.</p><span class="fc__res">→ Бренд выглядит живым и дорогим</span><a href="#motion">Motion-работы →</a></div>
+            <div class="fc__pane"><span class="fc__icon">📱</span><b>Оформление соцсетей</b><p>Аватар, обложки, шаблоны постов, stories и highlights для всех площадок.</p><span class="fc__res">→ Вашу страницу узнают в ленте с первого взгляда</span><a href="#social">Кейсы оформления →</a></div>
+            <div class="fc__pane"><span class="fc__icon">📣</span><b>Реклама и стратегия</b><p>Креативы, рекламные посты, тестирование гипотез и масштабирование.</p><span class="fc__res">→ Внимание превращается в клиентов</span><a href="#marketing">Рекламные кейсы →</a></div>
+          </div>
+          <div class="fc__progress"><i></i></div>
+        </div>
       </div>
     </section>
 
@@ -127,7 +177,7 @@
         <h2 class="rv" style="--d:1">Дизайн, который <em>приводит клиентов</em>, <span>а не просто нравится</span></h2>
         <p class="mk-lead rv" style="--d:2">Создаю рекламные креативы, посты и кампании под конкретную цель: подписчики, заявки, продажи. Каждый визуал отвечает на вопрос, зачем он нужен бизнесу и какое действие должен вызвать.</p>
         <div class="mk-stack rv" style="--d:3">
-          <span>Web Design</span><b>+</b><span>Telegram Bots</span><b>+</b><span class="on">Advertising</span><b>+</b><span class="on">Marketing</span>
+          <span>Web Design</span><b>+</b><span>Telegram Bots</span><b>+</b><span class="on">Advertising</span><b>+</b><span class="on">Marketing</span><b>+</b><span>Video</span><b>+</b><span>Social</span>
         </div>
 
         <div class="mk-services">
@@ -459,27 +509,415 @@
       </div>
     </section>
 
-    <!-- 6. CTA -->
+  </div>
+
+  <!-- 04 · Video Editing и 05 · Motion Design -->
+  <div class="mk" id="production">
+    <section class="mk-dark mk-cine mk-block" id="video">
+      <div class="mk-hero__glow" style="opacity:.5"></div>
+      <div class="mk-wrap" style="position:relative">
+        <div class="mk-head">
+          <div>
+            <p class="mk-eyebrow rv">04 · Video Editing</p>
+            <h2 class="mk-h2 rv" style="--d:1">Не просто монтирую&nbsp;видео — превращаю исходники в&nbsp;контент, который досматривают</h2>
+          </div>
+          <p class="mk-lead rv" style="--d:2">Быстрый ритм, субтитры, звук и motion-графика, которые удерживают внимание с первой секунды и делают ролик профессиональным.</p>
+        </div>
+
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__row">
+            <span class="hl">Reels</span><span>TikTok</span><span>Shorts</span><span class="hl">Рекламные ролики</span><span>Видео для блогеров</span><span>Экспертный контент</span><span class="hl">Динамичный монтаж</span>
+            <span class="hl">Reels</span><span>TikTok</span><span>Shorts</span><span class="hl">Рекламные ролики</span><span>Видео для блогеров</span><span>Экспертный контент</span><span class="hl">Динамичный монтаж</span>
+          </div>
+          <div class="marquee__row marquee__row--rev">
+            <span>Motion Design</span><span class="hl">2D-анимация</span><span>Анимация текста</span><span>Кинетическая типографика</span><span class="hl">Transitions</span><span>Визуальные эффекты</span><span>Рекламные видео</span>
+            <span>Motion Design</span><span class="hl">2D-анимация</span><span>Анимация текста</span><span>Кинетическая типографика</span><span class="hl">Transitions</span><span>Визуальные эффекты</span><span>Рекламные видео</span>
+          </div>
+        </div>
+
+        <!-- Шоурил -->
+        <div class="rp rv" id="showreel" data-live>
+          <div class="rp__main">
+            <div class="rp__screen" title="Пауза / воспроизведение">
+              <div class="rp__scene sc-a on">
+                <div class="sc-a__zoom"><p class="kw"><span style="--i:0">Сменить</span><span style="--i:1">профессию</span><span style="--i:2">в&nbsp;30?</span></p></div>
+                <span class="sc-a__emoji">🚀</span>
+              </div>
+              <div class="rp__scene sc-b">
+                <div class="sc-b__wrap">
+                  <p class="sc-b__title"><small>Neura Copy · AI</small>Карточка товара за&nbsp;30&nbsp;секунд</p>
+                  <div class="ui-card"><div class="ui-card__p">Термокружка 450 мл, сталь…</div><div class="ui-card__l" style="--w:94%;--i:0"></div><div class="ui-card__l" style="--w:78%;--i:1"></div><div class="ui-card__l" style="--w:88%;--i:2"></div><div class="ui-card__l" style="--w:60%;--i:3"></div><div class="ui-card__ok">✓ Готово · 28 сек</div></div>
+                </div>
+              </div>
+              <div class="rp__scene sc-c">
+                <div class="sc-c__wrap">
+                  <div class="speaker"><div class="speaker__body"><div class="speaker__head"></div></div></div>
+                  <div class="chart"><b>Подушка безопасности</b><i style="--h:35%;--i:0"></i><i style="--h:62%;--i:1"></i><i style="--h:100%;--i:2"></i></div>
+                </div>
+                <div class="lower3"><b>Ирина Кравец</b><span>финансовый консультант</span></div>
+              </div>
+              <div class="rp__scene sc-d">
+                <div class="logo-rev"><div class="logo-rev__mark"></div><b>Showreel 2026</b><span>Video · Motion · Social</span></div>
+              </div>
+              <div class="rp__lb rp__lb--t"></div><div class="rp__lb rp__lb--b"></div>
+              <span class="rp__rec" id="rpRec">REC 00:00:00:00</span>
+              <p class="rp__sub" id="rpSub"></p>
+              <span class="rp__big-play">▶</span>
+            </div>
+            <div class="rp__bar">
+              <button class="rp__toggle" id="rpToggle" aria-label="Пауза">❚❚</button>
+              <span class="rp__time" id="rpTime">00:00 / 00:20</span>
+              <div class="rp__track" id="rpTrack"><i class="rp__fill" id="rpFill"></i><span style="left:25%"></span><span style="left:50%"></span><span style="left:75%"></span></div>
+            </div>
+          </div>
+          <div class="rp__chapters" id="rpChapters">
+            <button class="on"><small>00:00</small><b>Social Media Reel</b><span>Хук, zoom-in и субтитры</span><i></i></button>
+            <button><small>00:05</small><b>Advertising Video</b><span>UI-анимация и оффер</span><i></i></button>
+            <button><small>00:10</small><b>Expert Content</b><span>Инфографика и титры</span><i></i></button>
+            <button><small>00:15</small><b>Motion Design</b><span>Анимация логотипа</span><i></i></button>
+          </div>
+        </div>
+
+        <!-- Видеокейсы -->
+        <div class="vcases">
+          <article class="vcase rv">
+            <div class="vprev" tabindex="0" style="--len:6s">
+              <div class="vprev__stage vp-reel">
+                <div class="phone9">
+                  <div class="phone9__bars"><i></i><i></i><i></i></div>
+                  <div class="phone9__zoom"><div class="speaker"><div class="speaker__body"><div class="speaker__head"></div></div></div></div>
+                  <span class="phone9__emoji">🔥</span>
+                  <p class="cap"><span style="--i:0">Если</span><span style="--i:1">вам</span><span style="--i:2">30</span><span style="--i:3">и</span><span style="--i:4">страшно</span><span style="--i:5">начинать</span></p>
+                </div>
+                <span class="fx fx--1">ZOOM-IN</span><span class="fx fx--2">SFX ♪</span><span class="fx fx--3">CAPTIONS</span>
+              </div>
+              <div class="vprev__ui"><span class="vprev__cat">Reels · личный бренд</span><span class="vprev__play">▶</span><span class="vprev__title">«Сменить профессию в 30»</span><div class="vprev__track"><i></i></div><span class="vprev__dur">0:38</span></div>
+            </div>
+            <div class="vcase__body">
+              <div class="vcase__top"><span>Social Media Reel</span><span>01 / 04</span></div>
+              <h3>«Сменить профессию в 30»<small>Reels для личного бренда карьерного консультанта</small></h3>
+              <dl class="vcase__rows">
+                <div><dt>Задача</dt><dd>Зацепить зрителя за 1,5 секунды и удержать до конца ролика</dd></div>
+                <div><dt>Сделано</dt><dd>Монтаж под ритм, анимированные субтитры, zoom-in/out на акцентах, sound design</dd></div>
+                <div><dt>Техники</dt><dd class="vcase__tags"><i>Jump cuts</i><i>Dynamic captions</i><i>Zoom punch</i><i>SFX</i><i>Motion graphics</i></dd></div>
+              </dl>
+              <p class="vcase__res"><b>Результат:</b> Reels 0:38 и версии для TikTok и Shorts. Цель — досмотр 60%+.</p>
+            </div>
+          </article>
+
+          <article class="vcase rv" style="--d:1">
+            <div class="vprev" tabindex="0" style="--len:6s">
+              <div class="vprev__stage vp-ad">
+                <div class="vp-ad__s"><p class="vp-ad__hook">2 часа на&nbsp;одно<br><span>описание товара?</span></p></div>
+                <div class="vp-ad__s"><div class="ui-card"><div class="ui-card__p">Термокружка 450 мл, сталь…</div><div class="ui-card__l" style="--w:94%"></div><div class="ui-card__l" style="--w:78%"></div><div class="ui-card__l" style="--w:88%"></div><div class="ui-card__ok">✓ Готово · 28 сек</div></div></div>
+                <div class="vp-ad__s"><div class="vp-ad__cta"><b>Первые 50 карточек — бесплатно</b><span>Попробовать Neura Copy</span></div></div>
+              </div>
+              <div class="vprev__ui"><span class="vprev__cat">Рекламный ролик</span><span class="vprev__play">▶</span><span class="vprev__title">Neura Copy — промо</span><div class="vprev__track"><i></i></div><span class="vprev__dur">0:30</span></div>
+            </div>
+            <div class="vcase__body">
+              <div class="vcase__top"><span>Advertising Video</span><span>02 / 04</span></div>
+              <h3>Neura Copy<small>Рекламный ролик для AI-сервиса описаний товаров</small></h3>
+              <dl class="vcase__rows">
+                <div><dt>Задача</dt><dd>За 30 секунд объяснить продукт и довести зрителя до клика</dd></div>
+                <div><dt>Сделано</dt><dd>Сценарий «хук → боль → решение → оффер», анимация интерфейса, финал с CTA</dd></div>
+                <div><dt>Техники</dt><dd class="vcase__tags"><i>Kinetic type</i><i>UI motion</i><i>Transitions</i><i>Color grading</i></dd></div>
+              </dl>
+              <p class="vcase__res"><b>Результат:</b> ролик в форматах 16:9, 9:16 и 1:1 для таргета и посевов.</p>
+            </div>
+          </article>
+
+          <article class="vcase rv">
+            <div class="vprev" tabindex="0" style="--len:6s">
+              <div class="vprev__stage vp-exp">
+                <div class="sc-c__wrap">
+                  <div class="speaker"><div class="speaker__body"><div class="speaker__head"></div></div></div>
+                  <div class="chart"><b>Доходы / расходы</b><i style="--h:45%;--i:0"></i><i style="--h:70%;--i:1"></i><i style="--h:100%;--i:2"></i></div>
+                </div>
+                <p class="hlt">Подушка = <span>6 зарплат</span></p>
+                <div class="lower3"><b>Ирина Кравец</b><span>финансовый консультант</span></div>
+              </div>
+              <div class="vprev__ui"><span class="vprev__cat">Экспертный контент</span><span class="vprev__play">▶</span><span class="vprev__title">«Финансы без паники»</span><div class="vprev__track"><i></i></div><span class="vprev__dur">12:40</span></div>
+            </div>
+            <div class="vcase__body">
+              <div class="vcase__top"><span>Expert Content</span><span>03 / 04</span></div>
+              <h3>«Финансы без паники»<small>Монтаж экспертного видео для YouTube</small></h3>
+              <dl class="vcase__rows">
+                <div><dt>Задача</dt><dd>Сделать 12 минут разговорного видео эксперта нескучными</dd></div>
+                <div><dt>Сделано</dt><dd>Динамические субтитры, инфографика поверх речи, выделение ключевых мыслей, главы</dd></div>
+                <div><dt>Техники</dt><dd class="vcase__tags"><i>Lower thirds</i><i>Infographics</i><i>B-roll</i><i>Text highlights</i></dd></div>
+              </dl>
+              <p class="vcase__res"><b>Результат:</b> выпуск 12:40 и 5 Shorts из лучших моментов.</p>
+            </div>
+          </article>
+
+          <article class="vcase rv" style="--d:1">
+            <div class="vprev" tabindex="0" style="--len:4s">
+              <div class="vprev__stage vp-mo">
+                <div class="kanban">
+                  <div class="kanban__col"><small>В работе</small><div class="kanban__card kanban__card--move">Лендинг клиента</div><div class="kanban__card">Счёт №24</div></div>
+                  <div class="kanban__col"><small>Готово</small><div class="kanban__card">Логотип</div><div class="kanban__card">Бриф</div></div>
+                  <div class="kanban__col"><small>Идеи</small><div class="kanban__card">Reels</div></div>
+                </div>
+                <span class="cursor"></span>
+                <span class="toast">✓ Задача закрыта</span>
+              </div>
+              <div class="vprev__ui"><span class="vprev__cat">Motion Design · UI</span><span class="vprev__play">▶</span><span class="vprev__title">FocusOS — product motion</span><div class="vprev__track"><i></i></div><span class="vprev__dur">0:15</span></div>
+            </div>
+            <div class="vcase__body">
+              <div class="vcase__top"><span>Motion Design</span><span>04 / 04</span></div>
+              <h3>FocusOS<small>Motion-графика интерфейса цифрового продукта</small></h3>
+              <dl class="vcase__rows">
+                <div><dt>Задача</dt><dd>Показать, как работает продукт, без съёмки экрана и долгих объяснений</dd></div>
+                <div><dt>Сделано</dt><dd>Анимация интерфейса, текста и иконок, плавные переходы между экранами</dd></div>
+                <div><dt>Техники</dt><dd class="vcase__tags"><i>UI motion</i><i>Easing</i><i>Masks</i><i>Seamless loop</i></dd></div>
+              </dl>
+              <p class="vcase__res"><b>Результат:</b> loop 0:15 для лендинга и рекламы и Lottie-версия для сайта.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="mk-dark mk-cine mk-block" id="motion" style="padding-top:40px">
+      <div class="mk-wrap">
+        <div class="mk-head">
+          <div>
+            <p class="mk-eyebrow rv">05 · Motion Design</p>
+            <h2 class="mk-h2 rv" style="--d:1">Оживляю всё, что видит ваш клиент</h2>
+          </div>
+          <p class="mk-lead rv" style="--d:2">Движение показывает продукт быстрее слов: объясняет интерфейс, расставляет акценты и делает бренд запоминающимся.</p>
+        </div>
+        <div class="mo-what rv">
+          <span>Текст</span><span>Логотипы</span><span>UI</span><span>Графические элементы</span><span>Рекламные баннеры</span><span>Персонажи</span><span>Интерфейсы</span><span>Отдельные объекты</span>
+        </div>
+
+        <div class="motions" data-live>
+          <article class="mo rv">
+            <div class="mo__stage mo-kin"><span class="mo__loop">LOOP 4.8s</span>
+              <div class="kin"><span class="kin__stretch">Ваш продукт</span><div class="kin__mask"><div class="kin__list"><span>быстрее.</span><span>проще.</span><span>дешевле.</span><span>быстрее.</span></div></div><div class="kin__bar"></div></div>
+            </div>
+            <div class="mo__body"><b>Kinetic Typography</b><p>Анимация текста и акцентных слов для роликов и рекламы.</p><small>MP4 · MOV с альфа-каналом</small></div>
+          </article>
+          <article class="mo rv" style="--d:1">
+            <div class="mo__stage mo-logo"><span class="mo__loop">LOOP 4s</span>
+              <div class="orbit"><i></i><i></i><i></i><div class="orbit__ring"></div></div>
+              <span class="logo-word">ORBIT</span>
+            </div>
+            <div class="mo__body"><b>Logo Animation</b><p>Анимация логотипа для заставок видео и аватаров соцсетей.</p><small>MP4 · GIF · Lottie</small></div>
+          </article>
+          <article class="mo rv" style="--d:2">
+            <div class="mo__stage mo-ui"><span class="mo__loop" style="color:#1d2733;background:rgba(255,255,255,.7)">LOOP 3s</span>
+              <div class="uimo">
+                <div class="uimo__row">Уведомления о заявках <span class="switch"></span></div>
+                <div class="uimo__bars"><i style="--h:40%;--i:0"></i><i style="--h:70%;--i:1"></i><i style="--h:55%;--i:2"></i><i style="--h:90%;--i:3"></i><i style="--h:65%;--i:4"></i><i style="--h:100%;--i:5"></i></div>
+              </div>
+              <span class="uimo__toast">🔔 Новая заявка с сайта</span>
+            </div>
+            <div class="mo__body"><b>UI Motion</b><p>Анимация интерфейсов и элементов digital-продукта.</p><small>Lottie · MP4 для презентаций</small></div>
+          </article>
+          <article class="mo rv" style="--d:3">
+            <div class="mo__stage mo-ad"><span class="mo__loop">LOOP 1.6s</span>
+              <div class="adbanner"><span>Только до воскресенья</span><b>−30%</b><i>Забрать скидку</i></div>
+              <div class="mascot"><span class="mascot__eye mascot__eye--l"></span><span class="mascot__eye mascot__eye--r"></span><span class="mascot__arm"></span></div>
+            </div>
+            <div class="mo__body"><b>Advertising Motion</b><p>Анимированные рекламные креативы с персонажем и акцентом на оффер.</p><small>MP4 · GIF для таргета и Stories</small></div>
+          </article>
+        </div>
+
+        <div class="tl rv" data-live aria-hidden="true">
+          <div class="tl__ruler"><span>Composition</span><div class="tl__ticks"><span>0s</span><span>1s</span><span>2s</span><span>3s</span><span>4s</span></div></div>
+          <div class="tl__body">
+            <div class="tl__head"><i></i></div>
+            <div class="tl__row" style="--c:#3aa8ee"><span>Text</span><div class="tl__lane"><div class="tl__clip" style="--s:2%;--w:56%"></div><i class="tl__key" style="--x:2%"></i><i class="tl__key" style="--x:22%"></i><i class="tl__key" style="--x:58%"></i></div></div>
+            <div class="tl__row" style="--c:#7c6cff"><span>Logo</span><div class="tl__lane"><div class="tl__clip" style="--s:30%;--w:50%"></div><i class="tl__key" style="--x:30%"></i><i class="tl__key" style="--x:55%"></i><i class="tl__key" style="--x:80%"></i></div></div>
+            <div class="tl__row" style="--c:#ff7a59"><span>UI</span><div class="tl__lane"><div class="tl__clip" style="--s:10%;--w:70%"></div><i class="tl__key" style="--x:10%"></i><i class="tl__key" style="--x:45%"></i><i class="tl__key" style="--x:80%"></i></div></div>
+            <div class="tl__row" style="--c:#2fd38a"><span>Shape</span><div class="tl__lane"><div class="tl__clip" style="--s:48%;--w:50%"></div><i class="tl__key" style="--x:48%"></i><i class="tl__key" style="--x:70%"></i><i class="tl__key" style="--x:96%"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 06 · Social Media -->
+  <div class="mk" id="social-wrap">
+    <section class="mk-light mk-block" id="social">
+      <div class="mk-wrap">
+        <div class="mk-head">
+          <div>
+            <p class="mk-eyebrow rv">06 · Social Media</p>
+            <h2 class="mk-h2 rv" style="--d:1">Визуальный стиль, по&nbsp;которому вас узнают в&nbsp;ленте</h2>
+          </div>
+          <p class="mk-lead rv" style="--d:2">Полностью оформляю соцсети под личный бренд, бизнес или digital-продукт: от аватара до шаблонов, по которым удобно делать контент каждый день.</p>
+        </div>
+
+        <div class="sm-tags rv">
+          <b>Площадки</b>
+          <div><span class="pf">Telegram</span><span class="pf">Instagram</span><span class="pf">TikTok</span><span class="pf">YouTube</span><span class="pf">VK</span></div>
+          <b>Что входит</b>
+          <div><span>Аватар</span><span>Обложки</span><span>Визуальный стиль</span><span>Посты</span><span>Stories</span><span>Highlights</span><span>Рекламные публикации</span><span>Шаблоны для контента</span></div>
+        </div>
+
+        <!-- Витрина: всё оформление одного бренда -->
+        <div class="showcase rv">
+          <div class="sh-desk">
+            <div class="sh-desk__bar"><i></i><i></i><i></i></div>
+            <div class="sh-cover"><b>Анна Мельник</b><span>Карьера после 30 · новая профессия без страха</span></div>
+            <div class="sh-chan"><span class="ava"><em>АМ</em></span><div><b>Анна Мельник</b><small>YouTube · новые видео по четвергам</small></div><span class="sh-chan__btn">Подписаться</span></div>
+            <div class="sh-thumbs">
+              <div class="thumb">Ушла из банка в 32<small>14:20</small></div>
+              <div class="thumb">5 профессий без опыта<small>18:05</small></div>
+              <div class="thumb">Резюме, которое читают<small>11:48</small></div>
+            </div>
+          </div>
+
+          <div class="ph ph--ig"><div class="ph__screen"><div class="ig">
+            <div class="ig__top"><span class="ava"><em>АМ</em></span><div class="ig__name"><b>anna.melnik</b><span>карьерный консультант</span></div></div>
+            <p class="ig__bio">Помогаю сменить профессию после 30 ✦ 400+ учеников ✦ бесплатный гайд ↓</p>
+            <div class="ig__hl"><span><i>💼</i>Кейсы</span><span><i>💬</i>Отзывы</span><span><i>🎓</i>Курс</span><span><i>☕</i>Обо мне</span></div>
+            <div class="ig__grid"><span>5 ошибок в резюме</span><span>Кейс: Оля, 34</span><span>Гайд бесплатно</span><span>Тест: ваша профессия</span><span>Эфир в четверг</span><span>Отзыв Ильи</span><span>Мой путь</span><span>3 шага к офферу</span><span>Набор открыт</span></div>
+          </div></div></div>
+
+          <div class="ph ph--tg"><div class="ph__screen"><div class="tgc">
+            <div class="tgc__head"><span class="ava"><em>АМ</em></span><div><b>Карьера после 30</b><small>Telegram-канал</small></div></div>
+            <div class="tgc__pin"><b>Закреплено:</b> бесплатный гайд «С чего начать»</div>
+            <div class="tgc__msgs">
+              <div class="tgc__msg"><div class="tgc__img"><small>Рубрика · разбор</small>3 ошибки в резюме после 30</div><div class="tgc__txt"><b>Резюме читают 7 секунд</b>Показываю, что убрать в первую очередь.</div></div>
+              <div class="tgc__msg"><div class="tgc__txt"><b>📌 Эфир в четверг, 19:00</b>Разберу ваши вопросы о смене профессии.</div><div class="tgc__btn">Напомнить</div></div>
+            </div>
+          </div></div></div>
+
+          <div class="ph ph--story"><div class="ph__screen"><div class="story-ph">
+            <div class="story-ph__bars"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            <div class="story-ph__who"><span class="ava"><em>АМ</em></span>anna.melnik</div>
+            <b>Страшно менять профессию после&nbsp;30?</b>
+            <p>Отвечу на ваши вопросы в эфире</p>
+            <div class="story-ph__poll">Вам знакомо это чувство?<div><span>Да 🙋</span><span>Уже нет</span></div></div>
+          </div></div></div>
+
+          <div class="sh-adpost">
+            <div class="sh-adpost__label"><span>Telegram · посев</span><span>Реклама</span></div>
+            <div class="sh-adpost__img"><small>Бесплатный гайд</small>Новая профессия за&nbsp;5&nbsp;месяцев</div>
+            Пошаговый план для тех, кому за 30 и кто устал от нелюбимой работы.
+            <div class="sh-adpost__cta">Забрать гайд</div>
+          </div>
+
+          <div class="sh-ava">
+            <span class="ava"><em>АМ</em></span>
+            <div><b>Аватар и палитра</b><small>единые для всех площадок</small>
+              <div class="sh-palette"><i style="background:#2a1d3a"></i><i style="background:#ff7a59"></i><i style="background:#b9a7ff"></i><i style="background:#fff6ef"></i></div>
+            </div>
+          </div>
+
+          <span class="note note--cover">Обложка YouTube</span>
+          <span class="note note--ig">Профиль и highlights</span>
+          <span class="note note--tg">Telegram-канал</span>
+          <span class="note note--story">Stories</span>
+          <span class="note note--ad">Рекламный пост</span>
+        </div>
+
+        <!-- Кейсы оформления -->
+        <div class="mk-head" style="margin-bottom:32px">
+          <div>
+            <p class="mk-eyebrow rv">Кейсы оформления</p>
+            <h2 class="mk-h2 rv" style="--d:1">Не набор картинок, а&nbsp;визуальная система</h2>
+          </div>
+        </div>
+        <div class="scases">
+          <article class="scase rv">
+            <div class="board" style="--b-bg:#f7efe9;--b-main:#2a1d3a;--b-on:#fff;--b-acc:#ff7a59;--b-acc-on:#fff">
+              <div class="board__plat"><i>IG</i><i>TG</i><i>VK</i></div>
+              <div class="board__hero"><small>Шаблон stories</small><b>Страшно менять профессию после 30?</b><span>Ответить</span></div>
+              <div class="board__id"><div class="board__id-top"><span class="bava">АМ</span><div><b>Анна Мельник</b><small>карьерный консультант</small></div></div><div class="swatches"><i style="background:#2a1d3a"></i><i style="background:#ff7a59"></i><i style="background:#b9a7ff"></i><i style="background:#fff6ef"></i></div><div class="typespec"><b>Aa</b>Manrope Bold / Regular</div></div>
+              <div class="board__tiles"><span>Кейс: Оля, 34</span><span>Гайд бесплатно</span><span>5 ошибок в резюме</span></div>
+            </div>
+            <div class="scase__body">
+              <div class="scase__top"><span>Personal Brand</span><span>01 / 04</span></div>
+              <h3>Анна Мельник</h3>
+              <p>Полное оформление соцсетей эксперта: тёплый, но деловой стиль для аудитории 30+.</p>
+              <div class="scase__done"><i>Аватар</i><i>Визуальная система</i><i>Посты</i><i>Stories</i><i>Обложки highlights</i></div>
+              <p class="scase__res"><b>Результат:</b> 24 шаблона и гайд по стилю. Контент делается за минуты и узнаётся в ленте.</p>
+            </div>
+          </article>
+
+          <article class="scase rv" style="--d:1">
+            <div class="board" style="--b-bg:#eef0ff;--b-main:#0d0f1a;--b-on:#fff;--b-acc:#3d5afe;--b-acc-on:#fff">
+              <div class="board__plat"><i>TG</i><i>VK</i><i>YT</i><i>IG</i></div>
+              <div class="board__hero"><small>Шаблон кейса</small><b>+38% заявок за 2 месяца для сети клиник</b><span>Смотреть кейс</span></div>
+              <div class="board__id"><div class="board__id-top"><span class="bava">◎</span><div><b>Orbit Digital</b><small>digital-агентство</small></div></div><div class="swatches"><i style="background:#0d0f1a"></i><i style="background:#3d5afe"></i><i style="background:#c7d0ff"></i><i style="background:#ffffff"></i></div><div class="typespec"><b>Aa</b>Manrope ExtraBold</div></div>
+              <div class="board__tiles"><span>Команда</span><span>Вакансия</span><span>Новый кейс</span></div>
+            </div>
+            <div class="scase__body">
+              <div class="scase__top"><span>Digital Agency</span><span>02 / 04</span></div>
+              <h3>Orbit Digital</h3>
+              <p>Единый визуальный стиль для digital-команды, чтобы агентство одинаково узнавали на всех площадках.</p>
+              <div class="scase__done"><i>Айдентика соцсетей</i><i>Шаблоны кейсов</i><i>Обложки</i><i>Гайдлайн</i></div>
+              <p class="scase__res"><b>Результат:</b> общая система для 4 площадок и 30+ шаблонов, по которым команда публикует сама.</p>
+            </div>
+          </article>
+
+          <article class="scase rv">
+            <div class="board" style="--b-bg:#e8f7ef;--b-main:#0b5e3a;--b-on:#fff;--b-acc:#3fe39a;--b-acc-on:#0b3b26">
+              <div class="board__plat"><i>TG</i></div>
+              <div class="board__hero"><small>Обложка и пост</small><b>Таблица семейного бюджета — бесплатно</b><span>Забрать</span></div>
+              <div class="board__id"><div class="board__id-top"><span class="bava">ДП</span><div><b>Деньги без паники</b><small>Telegram-канал</small></div></div><div class="swatches"><i style="background:#0b5e3a"></i><i style="background:#11905a"></i><i style="background:#3fe39a"></i><i style="background:#e8f7ef"></i></div><div class="typespec"><b>Aa</b>Manrope Bold</div></div>
+              <div class="board__tiles"><span>Рубрика: разбор</span><span>Посев</span><span>Чек-лист</span></div>
+            </div>
+            <div class="scase__body">
+              <div class="scase__top"><span>Telegram Channel</span><span>03 / 04</span></div>
+              <h3>«Деньги без паники»</h3>
+              <p>Оформление канала о личных финансах: спокойный, надёжный стиль вместо «кричащих» финансовых пабликов.</p>
+              <div class="scase__done"><i>Аватар</i><i>Обложка</i><i>Шаблоны постов</i><i>Рекламные материалы</i></div>
+              <p class="scase__res"><b>Результат:</b> 4 рубрики со своими шаблонами и пакет креативов для посевов в других каналах.</p>
+            </div>
+          </article>
+
+          <article class="scase rv" style="--d:1">
+            <div class="board" style="--b-bg:#fff8d6;--b-main:#111111;--b-on:#ffd400;--b-acc:#ffd400;--b-acc-on:#111">
+              <div class="board__plat"><i>YT</i><i>TT</i></div>
+              <div class="board__hero"><small>Thumbnail 16:9</small><b>Я проверил 5 ноутбуков до 60 000 ₽</b><span>НОВОЕ ВИДЕО</span></div>
+              <div class="board__id"><div class="board__id-top"><span class="bava">МТ</span><div><b>Макс Тех</b><small>tech-блогер</small></div></div><div class="swatches"><i style="background:#111"></i><i style="background:#ffd400"></i><i style="background:#ff3b30"></i><i style="background:#fff"></i></div><div class="typespec"><b>Aa</b>Manrope ExtraBold</div></div>
+              <div class="board__tiles"><span>Обзор</span><span>Топ-5</span><span>Ответы</span></div>
+            </div>
+            <div class="scase__body">
+              <div class="scase__top"><span>Creator</span><span>04 / 04</span></div>
+              <h3>Макс Тех</h3>
+              <p>Визуальный стиль страницы блогера: обложки, по которым видео узнают в рекомендациях.</p>
+              <div class="scase__done"><i>Аватар</i><i>Баннер канала</i><i>Thumbnails</i><i>Шаблоны публикаций</i></div>
+              <p class="scase__res"><b>Результат:</b> система обложек для YouTube и TikTok: новое превью собирается за 10 минут.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="mk" id="final">
+
+    <!-- Финальный CTA -->
     <section class="mk-light mk-cta" id="contact" style="padding-top:110px">
       <div class="mk-wrap">
         <div class="cta rv">
-          <h2>Есть продукт? Сделаю так, чтобы о&nbsp;нём узнали</h2>
-          <p>Соберу всё в одну систему: сайт приводит заявки, бот их не теряет, реклама приводит людей на сайт. Можно начать с одного направления.</p>
-          <div class="cta__options">
+          <h2>Есть продукт? Упакую его целиком — от&nbsp;сайта до&nbsp;рекламы</h2>
+          <p>Соберу всё в одну систему: сайт приводит заявки, бот их не теряет, видео и соцсети прогревают, реклама приводит людей. Можно начать с одного направления.</p>
+          <div class="cta__options cta__options--6">
             <div class="cta__opt"><span>🖥</span><b>Сайт</b><p>Продающий лендинг или сайт-визитка под вашу нишу</p></div>
             <div class="cta__opt"><span>🤖</span><b>Telegram-бот</b><p>Заявки, запись клиентов и автоворонки в мессенджере</p></div>
             <div class="cta__opt"><span>📣</span><b>Рекламная кампания</b><p>Стратегия, креативы и посты под вашу цель</p></div>
+            <div class="cta__opt"><span>🎬</span><b>Видеомонтаж</b><p>Reels, Shorts, рекламные и экспертные ролики</p></div>
+            <div class="cta__opt"><span>✨</span><b>Motion Design</b><p>Анимация логотипа, текста, интерфейсов и креативов</p></div>
+            <div class="cta__opt"><span>📱</span><b>Соцсети</b><p>Аватар, обложки, шаблоны и единый визуальный стиль</p></div>
           </div>
           <div class="cta__actions">
             <a class="btn-cta btn-cta--main" href="https://t.me/abakaka_yzbeka556" target="_blank" rel="noopener">Обсудить проект в Telegram</a>
             <a class="btn-cta btn-cta--ghost" href="#web">Смотреть работы</a>
           </div>
         </div>
-        <footer>Компании, люди и контакты на сайтах вымышлены. Формы работают в демо-режиме. Рекламные кейсы — концепт-проекты, цифры в них — цели кампаний, а не отчёт о результатах.</footer>
+        <footer>Компании, люди и контакты на сайтах вымышлены. Формы работают в демо-режиме. Рекламные, видео- и social-кейсы — концепт-проекты: цифры в них — цели, а не отчёт о результатах. Превью видео и motion собраны на HTML/CSS.</footer>
       </div>
     </section>
   </div>
 
   <script src="assets/portfolio.js"></script>
+  <script src="assets/media.js"></script>
 </body>
 </html>
